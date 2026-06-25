@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercise-2"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-25 03:37:11 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMzoxOToxMyBQTTsyNzU1"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMzozNzoxMSBQTTsxOzI4NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="length" type="Real" array="False" size=""/>
+            <input variable="length"/>
+            <declare name="totalLength" type="Real" array="False" size=""/>
+            <declare name="length2" type="Real" array="False" size=""/>
+            <assign variable="length2" expression="length/100"/>
+            <assign variable="totalLength" expression="length2 + (length2 * 10/100)"/>
+            <output expression="totalLength" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
