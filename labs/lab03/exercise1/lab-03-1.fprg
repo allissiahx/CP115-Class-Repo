@@ -18,4 +18,4 @@
             <output expression="finalPrice" newline="True"/>
         </body>
     </function>
-</flowgorithm>
+</flowgorithm> 
