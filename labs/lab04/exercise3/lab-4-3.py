@@ -1,5 +1,5 @@
 hours = float(input())
-if hours < 2:
+if hours <= 2:
     parkingFee = 0
 else:
     if hours < 6:
