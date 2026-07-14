@@ -3,6 +3,7 @@ ticketPrice = float(input())
 if weight <= 15:
     finalPrice = ticketPrice - 10
 else:
-    finalPrice = (weight * 4 )+ ticketPrice
+    finalPrice = (weight - 15) * 4 + ticketPrice
 print(finalPrice)
+
 
