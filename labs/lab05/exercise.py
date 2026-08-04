@@ -7,3 +7,114 @@
 # On Windows you may need:         py exercise.py
 #
 # Nothing in this file is marked, so experiment as much as you like.
+# Let's see Python keywords
+
+# Numeric data types
+age = 21                    # int (integer)
+height = 5.9               # float (floating-point number)
+temperature = -15.5        # float (can be negative)
+
+# String data type
+student_name = "Muhammad Ali"    # str (string)
+course_title = 'Python Programming'  # str (single or double quotes)
+description = """This is a multi-line
+string that spans several lines."""   # str (triple quotes)
+
+# Boolean data type
+is_active = True           # bool (boolean)
+has_submitted = False      # bool (boolean).
+
+# Special data type
+nothing = None             # NoneType (represents absence of value)
+
+print(type(age))
+print(type(temperature))
+print(type(student_name))
+print(type(is_active))
+print(type(nothing))
+
+print(type(25))
+print(type("25"))
+print(type(25.0))
+
+#Changing a type with casting
+number_text = "25"
+print(type(number_text))
+
+real_number = int(number_text)
+print(type(real_number))
+
+#------------------------------------------------------------------
+#STRING FUNCTIONS AND MENTHODS
+text = "Hello World"
+
+# len() is a function, so the value goes inside the brackets
+print(len(text))          # 11
+
+# upper() and lower() are methods, so the value comes before the dot
+print(text.upper())       # HELLO WORLD
+print(text.lower())       # hello world
+
+
+print(text.upper())
+print(text.upper)    #so what comes back is a description of the method itself rather than the result of using it.
+
+#-------------------------------------------------------------------
+text = "hello"
+shouted = text.upper()
+
+print(text)               # hello
+print(shouted)            # HELLO
+
+#-------------------------------------------------------------------
+# Import entire modules
+import math
+import random
+import datetime
+
+# Using imported modules
+circle_area = math.pi * (5 ** 2)
+random_number = random.randint(1, 100)
+current_date = datetime.date.today()
+
+# Import specific functions from modules
+from math import sqrt, pow, sin, cos
+from random import choice, shuffle
+from datetime import datetime, timedelta
+
+# Using imported functions directly (no module prefix needed)
+square_root = sqrt(25)
+power_result = pow(2, 8)
+random_choice = choice(['apple', 'banana', 'cherry'])
+
+#--------------------------------------------------------------------
+#INPUT & OUTPUT
+age = input("Enter your age: ")
+print(age)
+print(type(age))
+
+first = input("First number: ")   #DATA TYPE IS STRING SO THE OUTPUT WILL NOT ADD UP
+second = input("Second number: ")
+print(first + second)
+
+first = int(input("First number: "))    #DATA TYPE IS INT SO THE OUTPUT WILL ADD UP
+second = int(input("Second number: "))
+print(first + second)
+
+#=--------------------------------------------------------------------
+print("Hello", "Python", "World")
+print("Hello", "Python", "World", sep="-")
+
+print("Hello", end=" ")
+print("World")
+
+#---------------------------------------------------------------------
+name = "Alice"
+age = 25
+print("My name is " + name + " and I am " + str(age) + " years old.")
+
+name = "Alice"
+age = 25
+print(f"My name is {name} and I am {age} years old.")
+#F-STRING has no +, no extra quotes and no str()
+#Python replaces {name} and {age} with their values and turns the number into text for you.
