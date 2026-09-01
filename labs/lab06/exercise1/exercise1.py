@@ -14,7 +14,7 @@ muffin_total = round(muffin_price * 3, 2)
 water_total = round(water_price * 4, 2)
 
 receipt = ("========== RECEIPT ==========")
-item = (f"Item\tPrice\tQty\tTotal")
+item = ("Item\tPrice\tQty\tTotal")
 coffee = (f"Coffee\t{coffee_price:.2f}\t2\t${coffee_total:.2f}")
 muffin = (f"Muffin\t{muffin_price:.2f}\t3\t${muffin_total:.2f}")
 water = (f"Water\t{water_price:.2f}\t4\t${water_total:.2f}")
